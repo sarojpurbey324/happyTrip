@@ -1,0 +1,74 @@
+<div class="container">
+<form #f="ngForm" (ngSubmit)="submit(f)">
+
+<table class="table table-striped table-responsive">
+
+
+
+<tr> 
+
+Id: <input type="text" [ngModel]="id" name="id" />
+
+</tr>
+
+<tr>
+
+First Name : <input type="text" [ngModel]="fname" name="fname" required/>
+
+</tr>
+
+<tr>
+
+Last Name : <input type="text" [ngModel]="lname" name="lname" required/>
+
+</tr>
+
+<tr>
+
+Gender : <input type="radio" name="gender" value="male" checked> Male<br>
+
+<input type="radio" name="gender" value="female"> Female<br>
+
+<input type="radio" name="gender" value="other"> Other </tr>
+
+<tr>
+
+Age : <input type="number" [ngModel]="age" name="age"/>
+
+</tr>
+
+
+<tr>
+
+Phone number : <input type="phone" [ngModel]="phone" name="phone" required/>
+
+</tr>
+
+
+
+<tr>
+
+Email : <input type="email" [ngModel]="email" name="email" required placeholder="Enter a valid email address"/>
+
+</tr>
+
+<tr>
+
+Password : <input type="Password" [ngModel]="pass" name="pass"/>
+
+</tr>
+
+<tr>
+
+
+
+<button value="submit" class="btn btn-danger">Submit</button>
+
+</tr> 
+
+
+
+</table>
+
+</form> 
+</div>
